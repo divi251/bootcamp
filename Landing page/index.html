@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actyv</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="main_page_header">
+        <div id="navbar">
+            <div id="logoWrapper">
+                <img src="https://cdn.zeplin.io/5d88bd783689f40274e5d0f3/assets/3be9f492-69f0-4f04-9ab9-1520216ca381.svg"
+                    alt="actyv" />
+            </div>
+            <ul id="navbarlist">
+                <li><a href="https://www.actyv.com"><span class="activePage">Actyv</span></li></a>
+                <li><a href="https://www.actyv.com/pages/team.html"><span>Team</span></a></li>
+                <li><a href="https://www.actyv.com/pages/products.html"><span>Products</span></a></li>
+                <li><a href="https://angel.co/actyv-1/recruiting/listings"><span>Career</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main_container">
+        <div class="subjects_carosal">
+            <div>
+                <img src="./images/html.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/HTML')"
+                    alt="">
+                <p>day 1</p>
+            </div>
+            <div>
+                <img src="./images/css.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/CSS')"
+                    alt="">
+                <p>day 2</p>
+
+            </div>
+            <div>
+                <img src="./images/js.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/blob/master/JS/javascript_introduction.md')"
+                    alt="">
+                <p>day 3</p>
+
+            </div>
+            <div>
+                <img src="./images/react.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/React')"
+                    alt="">
+                <p>day 4</p>
+
+            </div>
+            <div>
+                <img src="./images/redux.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/redux')"
+                    alt="">
+                <p>day 5</p>
+
+            </div>
+            <div>
+                <img src="./images/react native.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/React%20Native')"
+                    alt="">
+                <p>day 6</p>
+
+            </div>
+            <div>
+                <img src="./images/mongo db.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/Mongodb%20&%20Mongoose')"
+                    alt="">
+                <p>day 7</p>
+
+            </div>
+            <div>
+                <img src="./images/hwt.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/JWT%20and%20Passport')"
+                    alt="">
+                <p>day 8</p>
+
+            </div>
+            <div>
+                <img src="./images/unit test.jpg"
+                    onclick="window.open('https://gitlab.com/divyansh.mt/Actyv-Bootcamp-Upgrade/-/tree/master/unit%20testing')"
+                    alt="">
+                <p>day 9</p>
+
+            </div>
+            <div>
+                <img src="./images/mern (1).jpg" onclick="window.open('https://gitlab.com/autolytics/Actyv-BootCamp')"
+                    alt="">
+                <p>day 10</p>
+
+            </div>
+
+        </div>
+        <div class="intro">
+            <img src="./images/logo.svg" alt="">
+            <p>Bootcamp</p>
+        </div>
+    </div>
+
+    </Footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .intro {
+            color: #000000;
+            text-align: center;
+        }
+
+        .subjects_carosal {
+            display: flex;
+            height: 220px;
+            white-space: nowrap;
+            overflow: scroll;
+            margin: 200px;
+        }
+
+        .subjects_carosal>div {
+            display: inline;
+            transform: translate3d(0, 0, 0);
+            animation: moveSlideshow 12s ease-in-out alternate-reverse infinite;
+        }
+
+        .subjects_carosal:hover div {
+            animation-play-state: paused;
+
+        }
+
+
+
+        .subjects_carosal>div>p {
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: bold;
+
+        }
+
+        .subjects_carosal>div>img {
+            box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.13);
+            cursor: pointer;
+            margin: 0 25px;
+        }
+
+        @keyframes moveSlideshow {
+            25% {
+                transform: translateX(-500.6666%);
+            }
+
+            100% {
+                transform: translateX(400.6666%);
+            }
+        }
+
+        @media only screen and (max-width: 760px) {
+            .subjects_carosal {}
+        }
+
+        #main_page_header {
+            background-color: #f9f9f9;
+            padding: 5px 100px;
+        }
+
+        #logoWrapper {
+            float: left;
+        }
+
+        #navbar {
+            overflow: auto;
+        }
+
+        #navbarlist {
+            list-style: none;
+            float: right;
+            margin-right: 10vw;
+        }
+
+        #navbarlist>li {
+            display: inline;
+            margin: 1.2vw 2.8vw;
+            font-size: 1vw;
+        }
+
+        #navbarlist>li>a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        #logoWrapper img {
+            width: 10vw;
+        }
+
+        .jandhan_logo {
+            font-size: 5vw;
+            margin: 0 1vw;
+        }
+
+        @media only screen and (max-width: 840px) {
+            #navbarlist {
+                list-style: none;
+                display: block;
+                float: none;
+                margin-right: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            #main_page_header {
+                padding: 5px 0px;
+            }
+
+            #navbarlist>li {
+                font-size: 2vw;
+            }
+
+            #logoWrapper img {
+                width: 38vw;
+            }
+
+            .jandhan_logo {
+                font-size: 5vw;
+                margin: 0 1vw;
+            }
+
+            .subjects_carosal {
+                display: flex;
+                height: 220px;
+                white-space: nowrap;
+                overflow: scroll;
+                margin: 100px 10px;
+            }
+
+            .subjects_carosal>div {
+                display: inline;
+                transform: translate3d(0, 0, 0);
+                animation: moveSlideshowresp 12s ease-in-out alternate-reverse infinite;
+            }
+
+            .subjects_carosal>div>p {
+                text-align: center;
+                text-transform: capitalize;
+                font-weight: bold;
+
+            }
+
+            .subjects_carosal>div>img {
+                box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.13);
+                cursor: pointer;
+                margin: 0 25px;
+            }
+
+            @keyframes moveSlideshowresp {
+                25% {
+                    transform: translateX(100.6666%);
+                }
+
+                100% {
+                    transform: translateX(-400.6666%);
+                }
+            }
+        }
+    </style>
+</body>
+
+</html>
